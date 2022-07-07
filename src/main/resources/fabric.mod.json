@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "coolhats",
+  "version": "${version}",
+
+  "name": "Cool Hats Mod",
+  "description": "This Is A Mod I Made To Get A Feel Of How To Make Minecraft Mods, It Adds Many Great Hats Like A Shark Hat.",
+  "authors": [
+    "Buttered, AKA TheLimeSheep"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.limesheep.coolhats.CoolHats"
+    ],
+    "client": [
+      "net.limesheep.coolhats.CoolHatsClient"
+    ]
+  },
+  "mixins": [
+    "coolhats.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
